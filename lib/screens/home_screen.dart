@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
         slivers: [
           const HomeTabBarWidget(),
           Obx(() => screens[homeController.currentIndex.value])

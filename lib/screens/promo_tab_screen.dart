@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gojek_ui_app/widgets/promo/gofood_plus_widget.dart';
 
+import '../widgets/promo/gofood_plus_widget.dart';
 import '../widgets/promo/promo_code_widget.dart';
 import '../widgets/promo/promo_list_widget.dart';
 import '../widgets/promo/progress_widget.dart';

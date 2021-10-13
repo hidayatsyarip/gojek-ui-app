@@ -9,7 +9,7 @@ class HomePaymentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final PageController pageController = PageController();
+    final PageController pageController = PageController(initialPage: 0);
     final homeController = Get.put(HomeController());
 
     _buildPageViewIndex(int maxIndex) {

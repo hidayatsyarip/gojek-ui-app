@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gojek_ui_app/widgets/home/card_with_image_widget.dart';
 
+import '../widgets/home/card_with_image_widget.dart';
 import '../widgets/home/card_with_button_widget.dart';
 import '../widgets/home/home_icon_widget.dart';
 import '../widgets/home/home_payment_widget.dart';
@@ -17,7 +17,7 @@ class HomeTabScreen extends StatelessWidget {
       const HomePaymentWidget(),
       const HomeIconWidget(),
       const CardWithButtonWidget(),
-      CardWithImageWidget()
+      const CardWithImageWidget()
     ]));
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:gojek_ui_app/screens/home_tab_screen.dart';
+import 'package:gojek_ui_app/screens/promo_tab_screen.dart';
 
 import '../controllers/home_controller.dart';
 import '../widgets/home/home_tab_bar_widget.dart';
@@ -14,11 +15,7 @@ class HomeScreen extends StatelessWidget {
 
     var screens = [
       const HomeTabScreen(),
-      SliverToBoxAdapter(
-        child: Center(
-          child: Text("Promos"),
-        ),
-      ),
+      const PromoTabScreen(),
       SliverToBoxAdapter(
         child: Center(
           child: Text("Orders"),

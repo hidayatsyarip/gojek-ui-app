@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gojek_ui_app/screens/home_tab_screen.dart';
-import 'package:gojek_ui_app/screens/order_tab_screen.dart';
-import 'package:gojek_ui_app/screens/promo_tab_screen.dart';
 
+import '../screens/home_tab_screen.dart';
+import '../screens/order_tab_screen.dart';
+import '../screens/promo_tab_screen.dart';
+import '../screens/chat_tab_screen.dart';
 import '../controllers/home_controller.dart';
 import '../widgets/home/home_tab_bar_widget.dart';
 
@@ -18,11 +19,7 @@ class HomeScreen extends StatelessWidget {
       const HomeTabScreen(),
       const PromoTabScreen(),
       const OrderTabScreen(),
-      SliverToBoxAdapter(
-        child: Center(
-          child: Text("Chat"),
-        ),
-      ),
+      const ChatTabScreen(),
     ];
 
     return Scaffold(

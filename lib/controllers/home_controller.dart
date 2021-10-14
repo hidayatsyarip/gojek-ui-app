@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gojek_ui_app/models/card_ads_model.dart';
+import 'package:gojek_ui_app/models/account_setting_model.dart';
 
+import '../models/card_ads_model.dart';
 import '../models/circle_icon_model.dart';
 
 class HomeController extends GetxController {
@@ -56,6 +57,16 @@ class HomeController extends GetxController {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         image: "images/ads_2.jpg")
+  ];
+
+  var accountSettingList = [
+    AccountSettingModel(label: "Orders", icon: Icons.receipt),
+    AccountSettingModel(label: "GoClub", icon: Icons.star),
+    AccountSettingModel(label: "My Vouchers", icon: Icons.card_membership),
+    AccountSettingModel(label: "Enter Promo Code", icon: Icons.redeem),
+    AccountSettingModel(label: "Payment Methods", icon: Icons.payment),
+    AccountSettingModel(label: "Help & My Tickets", icon: Icons.help),
+    AccountSettingModel(label: "Change Language", icon: Icons.language),
   ];
 
   getSliderButtonColor(int selectedIndex) {

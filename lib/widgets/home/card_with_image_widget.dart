@@ -13,7 +13,7 @@ class CardWithImageWidget extends StatelessWidget {
     _buildCardItems() {
       List<Widget> cardItems = [];
 
-      homeController.homeAdsList.forEach((item) {
+      for (var item in homeController.homeAdsList) {
         cardItems.add(SizedBox(
           height: 300.0,
           child: Card(
@@ -65,7 +65,7 @@ class CardWithImageWidget extends StatelessWidget {
         cardItems.add(const SizedBox(
           height: 10.0,
         ));
-      });
+      }
 
       return cardItems;
     }

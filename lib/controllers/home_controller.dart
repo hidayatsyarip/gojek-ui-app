@@ -77,15 +77,5 @@ class HomeController extends GetxController {
         : const BoxDecoration();
   }
 
-  getHomeIconBackgroundColor(String type) {
-    print("type: $type");
-
-    // if (type == "TYPE_1") {
-    //   return Colors.green.shade600;
-    // } else if (type == "TYPE_2") {
-    //   return Colors.red.shade300;
-    // } else {
-    //   return Colors.blue.shade600;
-    // }
-  }
+  getHomeIconBackgroundColor(String type) {}
 }
